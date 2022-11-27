@@ -94,7 +94,7 @@ def listar_dados():
     return jsonify({'menssagem': "Error"})
 
 
-@app.route('/dados/<busca_ncm>', methods=['GET'])
+@app.route('/ncm/<busca_ncm>', methods=['GET'])
 def filtrar_ncm(busca_ncm):
   try:
     cursor = conexion.cursor()
